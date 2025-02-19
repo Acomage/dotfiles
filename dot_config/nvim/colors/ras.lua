@@ -174,3 +174,10 @@ Group.new("MiniIconsGreen", colors.green, nil, styles.none)
 Group.new("MiniIconsYellow", colors.bright_yellow, nil, styles.none)
 Group.new("MiniIconsOrange", colors.yellow, nil, styles.none)
 Group.new("MiniIconsRed", colors.bright_red, nil, styles.none)
+
+-- Lualine
+Group.new("LualineFileName", colors.magenta, colors.background, styles.none)
+Group.new("LualineFileSize", colors.magenta, colors.background, styles.none)
+Group.new("LualineFileType", colors.magenta, colors.background, styles.none)
+Group.new("LualineLspClientName", colors.magenta, colors.background, styles.none)
+Group.new("LualineSessionName", colors.magenta, colors.background, styles.none)
