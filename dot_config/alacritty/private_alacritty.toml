@@ -1,0 +1,205 @@
+[env]
+TERM = "xterm-256color"
+WINIT_X11_SCALE_FACTOR = "1"
+
+[window]
+dynamic_padding = false
+decorations = "Full"
+title = "Alacritty"
+dynamic_title = true
+opacity = 0.1
+blur = true
+decorations_theme_variant = "Dark"
+startup_mode = "Maximized"
+level = "Normal"
+
+[window.dimensions]
+columns = 0
+lines = 0
+
+[window.padding]
+x = 0
+y = 0
+
+[window.class]
+instance = "Alacritty"
+general = "Alacritty"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[colors]
+draw_bold_text_with_bright_colors = false
+
+[colors.primary]
+background = "#0F0F0F"
+foreground = "#22CCCC"
+
+[colors.cursor]
+text = "#0F0F0F"
+cursor = "#22CCCC"
+
+[colors.vi_mode_cursor]
+text = "#0F0F0F"
+cursor = "#22CCCC"
+
+[colors.normal]
+black = "#0F0F0F"
+red = "#CC0000"
+green = "#AAEE22"
+yellow = "#EEBB44"
+blue = "#00BBFF"
+magenta = "#8250D2"
+cyan = "#22CCCC"
+white = "#E0FEFF"
+
+[colors.bright]
+black = "#3A3446"
+red = "#FF99BB"
+green = "#3AB299"
+yellow = "#F0C156"
+blue = "#4F8EC4"
+magenta = "#F5A2E0"
+cyan = "#39C9C5"
+white = "#F0FDFF"
+
+[colors.search.matches]
+foreground = "#0F0F0F"
+background = "#F5A2E0"
+
+[colors.search.focused_match]
+foreground = "#0F0F0F"
+background = "#8250D2"
+
+[colors.hints.start]
+foreground = "#0F0F0F"
+background = "#22CCCC"
+
+[colors.hints.end]
+foreground = "#0F0F0F"
+background = "#22CCCC"
+
+[font]
+size = 12
+builtin_box_drawing = true
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "Bold Italic"
+
+[font.offset]
+x = 0
+y = 0
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+save_to_clipboard = true
+
+[cursor]
+style = "Block"
+vi_mode_style = "None"
+unfocused_hollow = true
+thickness = 0.15
+
+[mouse]
+hide_when_typing = true
+
+[[mouse.bindings]]
+mouse = "Middle"
+action = "PasteSelection"
+
+[keyboard]
+[[keyboard.bindings]]
+key = "Paste"
+action = "Paste"
+
+[[keyboard.bindings]]
+key = "Copy"
+action = "Copy"
+
+[[keyboard.bindings]]
+key = "L"
+mods = "Control"
+action = "ClearLogNotice"
+
+[[keyboard.bindings]]
+key = "L"
+mods = "Control"
+mode = "~Vi"
+chars = "\f"
+
+[[keyboard.bindings]]
+key = "PageUp"
+mods = "Shift"
+mode = "~Alt"
+action = "ScrollPageUp"
+
+[[keyboard.bindings]]
+key = "PageDown"
+mods = "Shift"
+mode = "~Alt"
+action = "ScrollPageDown"
+
+[[keyboard.bindings]]
+key = "Home"
+mods = "Shift"
+mode = "~Alt"
+action = "ScrollToTop"
+
+[[keyboard.bindings]]
+key = "End"
+mods = "Shift"
+mode = "~Alt"
+action = "ScrollToBottom"
+
+[[keyboard.bindings]]
+key = "V"
+mods = "Control|Shift"
+action = "Paste"
+
+[[keyboard.bindings]]
+key = "C"
+mods = "Control|Shift"
+action = "Copy"
+
+[[keyboard.bindings]]
+key = "F"
+mods = "Control|Shift"
+action = "SearchForward"
+
+[[keyboard.bindings]]
+key = "B"
+mods = "Control|Shift"
+action = "SearchBackward"
+
+[[keyboard.bindings]]
+key = "C"
+mods = "Control|Shift"
+mode = "Vi"
+action = "ClearSelection"
+
+[[keyboard.bindings]]
+key = "Key0"
+mods = "Control"
+action = "ResetFontSize"
+
+[general]
+live_config_reload = true
+working_directory = "None"
