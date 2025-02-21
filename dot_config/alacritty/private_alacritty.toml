@@ -31,6 +31,7 @@ multiplier = 3
 
 [colors]
 draw_bold_text_with_bright_colors = false
+transparent_background_colors = false
 
 [colors.primary]
 background = "#0F0F0F"
@@ -116,7 +117,7 @@ save_to_clipboard = true
 style = "Block"
 vi_mode_style = "None"
 unfocused_hollow = true
-thickness = 0.15
+thickness = 0.0
 
 [mouse]
 hide_when_typing = true
