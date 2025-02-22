@@ -38,7 +38,6 @@ function y() {
 	rm_unsafe -f -- "$tmp"
 }
 
-bindkey -v
 
 # BEGIN opam configuration
 # This is useful if you're using opam as it adds:
