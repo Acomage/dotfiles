@@ -4,11 +4,11 @@ WINIT_X11_SCALE_FACTOR = "1"
 
 [window]
 dynamic_padding = false
-decorations = "None"
+decorations = "FULL"
 title = "Alacritty"
 dynamic_title = true
-opacity = 0.8
-blur = false
+opacity = 0.1
+blur = true
 decorations_theme_variant = "Dark"
 startup_mode = "Windowed"
 level = "Normal"
@@ -18,7 +18,7 @@ columns = 0
 lines = 0
 
 [window.padding]
-x = 5
+x = 10
 y = 0
 
 [window.class]
