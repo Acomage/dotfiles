@@ -9,7 +9,6 @@ return {
     end
 
     local cmp = require("cmp")
-
     opts.mapping = vim.tbl_extend("force", opts.mapping, {
       ["<Tab>"] = cmp.mapping(function(fallback)
         if cmp.visible() then
@@ -37,6 +36,10 @@ return {
           fallback()
         end
       end, { "i", "s" }),
+      ["<CR>"] = function(fallback)
+        cmp.abort()
+        fallback()
+      end,
     })
   end,
 }
