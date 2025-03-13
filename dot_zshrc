@@ -18,8 +18,8 @@ rm() {
   kioclient5 move "$@" trash:/
 }
 
-alias ls="eza"
-alias t="eza -T"
+alias ls="eza -lah --icons"
+alias t="eza -T --icons"
 alias n="nvim"
 alias vi="nvim"
 
