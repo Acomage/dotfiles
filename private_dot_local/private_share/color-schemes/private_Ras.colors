@@ -119,7 +119,7 @@ ForegroundVisited=245,162,224
 [General]
 ColorScheme=Ras
 Name=Ras
-TitlebarIsAccentColored=true
+TitlebarIsAccentColored=false
 shadeSortColumn=true
 
 [KDE]

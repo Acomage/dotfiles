@@ -15,7 +15,7 @@ _k_friendly_name=无障碍辅助
 [kcm_touchpad]
 Disable Touchpad=Touchpad Off,Touchpad Off,
 Enable Touchpad=Touchpad On,Touchpad On,
-Toggle Touchpad=Touchpad Toggle\tMeta+Ctrl+Zenkaku Hankaku,Touchpad Toggle\tMeta+Ctrl+Zenkaku Hankaku,
+Toggle Touchpad=Touchpad Toggle\tMeta+Ctrl+Zenkaku Hankaku,Touchpad Toggle\tTouchpad Toggle\tMeta+Ctrl+Touchpad Toggle\tMeta+Ctrl+Zenkaku Hankaku,
 _k_friendly_name=触摸板
 
 [kmix]
@@ -263,7 +263,7 @@ powerProfile=Battery,Battery\tMeta+B,切换电源管理方案
 
 [plasmashell]
 _k_friendly_name=plasmashell
-activate application launcher=Meta\tAlt+F1,Meta\tAlt+F1,激活应用程序启动器
+activate application launcher=Alt+F1\tMeta,Meta\tAlt+F1,激活应用程序启动器
 activate task manager entry 1=Meta+1,Meta+1,激活任务管理器条目 1
 activate task manager entry 10=none,,激活任务管理器条目 10
 activate task manager entry 2=Meta+2,Meta+2,激活任务管理器条目 2
@@ -280,7 +280,7 @@ cycle-panels=Meta+Alt+P,Meta+Alt+P,在面板之间移动键盘焦点
 cycleNextAction=none,,下一条历史记录
 cyclePrevAction=none,,上一条历史记录
 manage activities=none,Meta+Q,显示活动切换器
-next activity=Meta+A,none,遍历活动
+next activity=none,none,遍历活动
 previous activity=Meta+Shift+A,none,遍历活动 (反向)
 repeat_action=none,,在当前剪贴板上手动执行操作
 show dashboard=Ctrl+F12,Ctrl+F12,显示桌面
@@ -291,11 +291,14 @@ switch to next activity=none,,切换到下一个活动
 switch to previous activity=none,,切换到上一个活动
 toggle do not disturb=none,,切换勿扰模式
 
-[services][Alacritty.desktop]
-New=Meta+Return
-
 [services][firefox.desktop]
 _launch=Meta+B
+
+[services][kitty.desktop]
+_launch=Meta+Return
+
+[services][org.kde.kscreen.desktop]
+ShowOSD=Display
 
 [services][systemsettings.desktop]
 _launch=Meta+Space\tTools
