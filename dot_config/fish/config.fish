@@ -10,13 +10,25 @@ export EDITOR=nvim
 pyenv init - fish | source
 status --is-interactive; and pyenv virtualenv-init - | source
 
+zoxide init fish | source
+
+alias rm_unsafe='/bin/rm'
+
+function rm
+    if test (count $argv) -eq 0
+        echo "rm: Usage: rm <file_or_directory>"
+        return 1
+    end
+    trash-put $argv
+end
+
 function y
     set tmp (mktemp -t "yazi-cwd.XXXXXX")
     yazi $argv --cwd-file="$tmp"
     if set cwd (command cat -- "$tmp"); and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
         builtin cd -- "$cwd"
     end
-    rm -f -- "$tmp"
+    rm_unsafe -f -- "$tmp"
 end
 
 # BEGIN opam configuration
