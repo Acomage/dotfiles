@@ -113,8 +113,8 @@ semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
 save_to_clipboard = true
 
 [cursor]
-style = "Block"
-vi_mode_style = "None"
+style = "Beam"
+vi_mode_style = "Block"
 unfocused_hollow = true
 thickness = 0.0
 
