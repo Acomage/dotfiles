@@ -9,19 +9,27 @@ source /usr/share/cachyos-zsh-config/cachyos-config.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
 alias rm_unsafe='/bin/rm'
 rm() {
   if [ $# -eq 0 ]; then
     echo "rm: Usage: rm <file_or_directory>"
     return 1
   fi
-  kioclient5 move "$@" trash:/
+  trash-put "$@"
 }
 
-alias ls="eza -lah --icons"
-alias t="eza -T --icons"
 alias n="nvim"
-alias vi="nvim"
+alias ls='eza -al --color=always --group-directories-first --icons' # preferred listing
+alias la='eza -a --color=always --group-directories-first --icons'  # all files and dirs
+alias ll='eza -l --color=always --group-directories-first --icons'  # long format
+alias lt='eza -aT --color=always --group-directories-first --icons' # tree listing
+alias l.="eza -a | grep -e '^\.'"                                     # show only dotfiles
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
 
 export EDITOR=nvim
 
