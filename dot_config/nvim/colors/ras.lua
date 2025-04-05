@@ -176,3 +176,6 @@ Group.new("MiniIconsGreen", colors.green, nil, styles.none)
 Group.new("MiniIconsYellow", colors.bright_yellow, nil, styles.none)
 Group.new("MiniIconsOrange", colors.yellow, nil, styles.none)
 Group.new("MiniIconsRed", colors.bright_red, nil, styles.none)
+-- Statusline
+Color.new("StatusLineBG", "#303030")
+Group.new("StatusLine", colors.cyan, colors.StatusLineBG, styles.none)

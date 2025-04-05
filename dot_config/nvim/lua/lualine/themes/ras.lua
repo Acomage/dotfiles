@@ -10,7 +10,7 @@ local colors = {
 }
 hl.normal = {
   a = { bg = colors.bcbackground, fg = colors.cyan },
-  b = { colors.bcackground, fg = colors.cyan },
+  b = { bg = colors.bcbackground, fg = colors.cyan },
   c = { bg = colors.bcbackground, fg = colors.cyan },
   x = { bg = colors.bcbackground, fg = colors.cyan },
   y = { bg = colors.bcbackground, fg = colors.cyan },
@@ -19,7 +19,7 @@ hl.normal = {
 
 hl.insert = {
   a = { bg = colors.magenta, fg = colors.cyan },
-  b = { colors.bcackground, fg = colors.cyan },
+  b = { bg = colors.bcbackground, fg = colors.cyan },
   c = { bg = colors.bcbackground, fg = colors.cyan },
   x = { bg = colors.bcbackground, fg = colors.cyan },
   y = { bg = colors.bcbackground, fg = colors.cyan },
@@ -28,7 +28,7 @@ hl.insert = {
 
 hl.command = {
   a = { bg = colors.bright_magenta, fg = colors.magena },
-  b = { colors.bcackground, fg = colors.cyan },
+  b = { bg = colors.bcbackground, fg = colors.cyan },
   c = { bg = colors.bcbackground, fg = colors.cyan },
   x = { bg = colors.bcbackground, fg = colors.cyan },
   y = { bg = colors.bcbackground, fg = colors.cyan },
@@ -37,7 +37,7 @@ hl.command = {
 
 hl.visual = {
   a = { bg = colors.blue, fg = colors.magenta },
-  b = { colors.bcackground, fg = colors.cyan },
+  b = { bg = colors.bcbackground, fg = colors.cyan },
   c = { bg = colors.bcbackground, fg = colors.cyan },
   x = { bg = colors.bcbackground, fg = colors.cyan },
   y = { bg = colors.bcbackground, fg = colors.cyan },
@@ -46,7 +46,7 @@ hl.visual = {
 
 hl.replace = {
   a = { bg = colors.magenta, fg = colors.cyan },
-  b = { colors.bcackground, fg = colors.cyan },
+  b = { bg = colors.bcbackground, fg = colors.cyan },
   c = { bg = colors.bcbackground, fg = colors.cyan },
   x = { bg = colors.bcbackground, fg = colors.cyan },
   y = { bg = colors.bcbackground, fg = colors.cyan },
@@ -55,7 +55,7 @@ hl.replace = {
 
 hl.terminal = {
   a = { bg = colors.bright_red, fg = colors.magenta },
-  b = { colors.bcackground, fg = colors.cyan },
+  b = { bg = colors.bcbackground, fg = colors.cyan },
   c = { bg = colors.bcbackground, fg = colors.cyan },
   x = { bg = colors.bcbackground, fg = colors.cyan },
   y = { bg = colors.bcbackground, fg = colors.cyan },
@@ -64,11 +64,10 @@ hl.terminal = {
 
 hl.inactive = {
   a = { bg = colors.bcbackground, fg = colors.cyan },
-  b = { colors.bcackground, fg = colors.cyan },
+  b = { bg = colors.bcbackground, fg = colors.cyan },
   c = { bg = colors.bcbackground, fg = colors.cyan },
   x = { bg = colors.bcbackground, fg = colors.cyan },
   y = { bg = colors.bcbackground, fg = colors.cyan },
   z = { bg = colors.bcbackground, fg = colors.cyan },
 }
-
 return hl
