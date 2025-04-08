@@ -30,14 +30,14 @@ mic_mute=Microphone Mute\tMeta+Volume Mute,Microphone Mute\tMeta+Volume Mute,麦
 mute=Volume Mute,Volume Mute,静音
 
 [ksmserver]
-Halt Without Confirmation=none,,关机 (无需确认)
+Halt Without Confirmation=none,none,关机 (无需确认)
 Lock Session=Screensaver,Meta+L\tScreensaver,锁定会话
 Log Out=Ctrl+Alt+Del,Ctrl+Alt+Del,显示注销屏幕
-Log Out Without Confirmation=none,,注销 (无需确认)
-LogOut=none,,注销
-Reboot=none,,重启
-Reboot Without Confirmation=none,,重启 (无需确认)
-Shut Down=none,,关机
+Log Out Without Confirmation=none,none,注销 (无需确认)
+LogOut=none,none,注销
+Reboot=none,none,重启
+Reboot Without Confirmation=none,none,重启 (无需确认)
+Shut Down=none,none,关机
 _k_friendly_name=会话管理
 
 [kwin]
@@ -72,7 +72,7 @@ KrohnkitePreviousLayout=Meta+|,none,Krohnkite: Previous Layout
 KrohnkiteQuarterLayout=none,none,Krohnkite: Quarter Layout
 KrohnkiteRotate=none,none,Krohnkite: Rotate
 KrohnkiteRotatePart=none,none,Krohnkite: Rotate Part
-KrohnkiteSetMaster=none,none,Krohnkite: Set master
+KrohnkiteSetMaster=Meta+Z,none,Krohnkite: Set master
 KrohnkiteShiftDown=Meta+Shift+J,none,Krohnkite: Move Down/Next
 KrohnkiteShiftLeft=Meta+Shift+H,none,Krohnkite: Move Left
 KrohnkiteShiftRight=Meta+Shift+L,none,Krohnkite: Move Right
@@ -87,6 +87,7 @@ KrohnkiteTileLayout=none,none,Krohnkite: Tile Layout
 KrohnkiteToggleFloat=Meta+G,none,Krohnkite: Toggle Float
 KrohnkiteTreeColumnLayout=none,none,Krohnkite: Tree Column Layout
 KrohnkitegrowWidth=none,none,Krohnkite: Grow Width
+KrohnkitetoggleDock=none,none,Krohnkite: Toggle Dock
 Move Tablet to Next Output=none,none,移动数位板到下一个输出设备
 MoveMouseToCenter=Meta+F6,Meta+F6,移动鼠标到中央
 MoveMouseToFocus=Meta+F5,Meta+F5,移动鼠标到焦点
@@ -143,6 +144,7 @@ Switch to Screen to the Left=none,,切换到左侧屏幕
 Switch to Screen to the Right=none,,切换到右侧屏幕
 Toggle Night Color=none,none,暂停/继续夜间色温
 Toggle Window Raise/Lower=none,,提升/降低窗口
+ToggleCurrentThumbnail=Meta+Ctrl+T,Meta+Ctrl+T,显示/隐藏当前窗口缩略图
 Walk Through Windows=Alt+Tab,Alt+Tab,遍历窗口
 Walk Through Windows (Reverse)=Alt+Shift+Tab,Alt+Shift+Tab,遍历窗口 (反向)
 Walk Through Windows Alternative=none,,遍历窗口交替
@@ -231,16 +233,16 @@ Window to Screen 7=none,,移动窗口到屏幕 7
 _k_friendly_name=KWin
 disableInputCapture=Meta+Shift+Esc,Meta+Shift+Esc,禁用活动输入捕获
 view_actual_size=Meta+0,Meta+0,缩放为实际大小(A)
-view_zoom_in=Meta++\tMeta+=,Meta++\tMeta+=,放大(I)
-view_zoom_out=Meta+-,Meta+-,缩小(O)
+view_zoom_in=none,Meta++\tMeta+=,放大(I)
+view_zoom_out=none,Meta+-,缩小(O)
 
 [mediacontrol]
 _k_friendly_name=媒体控制器
-mediavolumedown=none,,媒体音量降低
-mediavolumeup=none,,媒体音量提高
+mediavolumedown=none,none,媒体音量降低
+mediavolumeup=none,none,媒体音量提高
 nextmedia=Media Next,Media Next,播放下一首媒体
 pausemedia=Media Pause,Media Pause,暂停媒体播放
-playmedia=none,,播放媒体
+playmedia=none,none,播放媒体
 playpausemedia=Media Play,Media Play,播放/暂停媒体播放
 previousmedia=Media Previous,Media Previous,播放上一首媒体
 stopmedia=Media Stop,Media Stop,停止媒体播放
@@ -263,7 +265,7 @@ powerProfile=Battery,Battery\tMeta+B,切换电源管理方案
 
 [plasmashell]
 _k_friendly_name=plasmashell
-activate application launcher=Alt+F1\tMeta,Meta\tAlt+F1,激活应用程序启动器
+activate application launcher=Alt+F1,Meta\tAlt+F1,激活应用程序启动器
 activate task manager entry 1=Meta+1,Meta+1,激活任务管理器条目 1
 activate task manager entry 10=none,,激活任务管理器条目 10
 activate task manager entry 2=Meta+2,Meta+2,激活任务管理器条目 2
@@ -296,6 +298,9 @@ _launch=Meta+B
 
 [services][kitty.desktop]
 _launch=Meta+Return
+
+[services][org.kde.krunner.desktop]
+_launch=Alt+Space\tSearch\tMeta\tAlt+F2
 
 [services][org.kde.kscreen.desktop]
 ShowOSD=Display

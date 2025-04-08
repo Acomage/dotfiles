@@ -6,6 +6,7 @@ end
 alias n="nvim"
 alias c="clear"
 alias dot="/home/acomage/workspace/dot/dot-cli-py/main_test.py"
+
 export EDITOR=nvim
 
 pyenv init - fish | source
