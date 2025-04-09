@@ -167,6 +167,15 @@ Group.new("SnacksDashboardSpecial", colors.bright_magenta, nil, styles.none)
 -- SnacksTerminal
 Group.new("SnacksNormal", colors.foreground, colors.backgroud, styles.none)
 
+-- WhichKey
+Group.new("WhichKey", colors.foreground, colors.background, styles.none)
+Group.new("WhichKeyGroup", colors.foreground, colors.background, styles.none)
+Group.new("WhichKeyDesc", colors.foreground, colors.background, styles.none)
+Group.new("WhichKeySeparator", colors.foreground, colors.background, styles.none)
+Group.new("WhichKeyNormal", colors.foreground, colors.background, styles.none)
+Group.new("WhichKeyValue", colors.foreground, colors.background, styles.none)
+Group.new("WhichKeyBorder", colors.foreground, colors.background, styles.none)
+
 -- Mini_icon
 Group.new("MiniIconsGrey", colors.bright_black, nil, styles.none)
 Group.new("MiniIconsPurple", colors.magenta, nil, styles.none)
@@ -177,6 +186,7 @@ Group.new("MiniIconsGreen", colors.green, nil, styles.none)
 Group.new("MiniIconsYellow", colors.bright_yellow, nil, styles.none)
 Group.new("MiniIconsOrange", colors.yellow, nil, styles.none)
 Group.new("MiniIconsRed", colors.bright_red, nil, styles.none)
+
 -- Statusline
 Color.new("StatusLineBG", "#303030")
 Group.new("StatusLine", colors.cyan, colors.StatusLineBG, styles.none)
