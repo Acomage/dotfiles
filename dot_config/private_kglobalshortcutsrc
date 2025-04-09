@@ -50,7 +50,7 @@ Expose=Ctrl+F9,Ctrl+F9,显示/隐藏窗口平铺 (当前桌面)
 ExposeAll=Meta+A\tCtrl+F10\tLaunch (C),Ctrl+F10\tLaunch (C),显示/隐藏窗口平铺 (全部桌面)
 ExposeClass=Ctrl+F7,Ctrl+F7,显示/隐藏窗口平铺 (窗口类)
 ExposeClassCurrentDesktop=none,none,显示/隐藏窗口平铺 (当前桌面的窗口类)
-Grid View=none,Meta+G,切换网格视图
+Grid View=Meta+S,Meta+G,切换网格视图
 Increase Opacity=none,,提高活动窗口不透明度 5%
 Kill Window=Meta+Ctrl+Esc,Meta+Ctrl+Esc,强制终止窗口
 KrohnkiteBTreeLayout=none,none,Krohnkite: BTree Layout
@@ -142,6 +142,7 @@ Switch to Screen Above=none,,切换到上方屏幕
 Switch to Screen Below=none,,切换到下方屏幕
 Switch to Screen to the Left=none,,切换到左侧屏幕
 Switch to Screen to the Right=none,,切换到右侧屏幕
+Toggle=Meta+Ctrl+Alt+P,Meta+Ctrl+Alt+P,开始/停止高亮显示
 Toggle Night Color=none,none,暂停/继续夜间色温
 Toggle Window Raise/Lower=none,,提升/降低窗口
 ToggleCurrentThumbnail=Meta+Ctrl+T,Meta+Ctrl+T,显示/隐藏当前窗口缩略图
@@ -288,16 +289,16 @@ repeat_action=none,,在当前剪贴板上手动执行操作
 show dashboard=Ctrl+F12,Ctrl+F12,显示桌面
 show-barcode=none,,显示条形码(S)…
 show-on-mouse-pos=Meta+V,Meta+V,在鼠标位置显示剪贴板项目
-stop current activity=Meta+S,Meta+S,停止当前活动
+stop current activity=none,Meta+S,停止当前活动
 switch to next activity=none,,切换到下一个活动
 switch to previous activity=none,,切换到上一个活动
 toggle do not disturb=none,,切换勿扰模式
 
+[services][Alacritty.desktop]
+New=Meta+Return
+
 [services][firefox.desktop]
 _launch=Meta+B
-
-[services][kitty.desktop]
-_launch=Meta+Return
 
 [services][org.kde.krunner.desktop]
 _launch=Alt+Space\tSearch\tMeta\tAlt+F2

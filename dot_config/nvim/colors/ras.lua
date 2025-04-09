@@ -165,6 +165,7 @@ Group.new("SnacksDashboardIcon", colors.cyan, nil, styles.none)
 Group.new("SnacksDashboardSpecial", colors.bright_magenta, nil, styles.none)
 
 -- SnacksTerminal
+Group.new("SnacksNormal", colors.foreground, colors.backgroud, styles.none)
 
 -- Mini_icon
 Group.new("MiniIconsGrey", colors.bright_black, nil, styles.none)
