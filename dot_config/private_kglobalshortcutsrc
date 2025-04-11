@@ -30,14 +30,14 @@ mic_mute=Microphone Mute\tMeta+Volume Mute,Microphone Mute\tMeta+Volume Mute,麦
 mute=Volume Mute,Volume Mute,静音
 
 [ksmserver]
-Halt Without Confirmation=none,none,关机 (无需确认)
+Halt Without Confirmation=none,,关机 (无需确认)
 Lock Session=Screensaver,Meta+L\tScreensaver,锁定会话
 Log Out=Ctrl+Alt+Del,Ctrl+Alt+Del,显示注销屏幕
-Log Out Without Confirmation=none,none,注销 (无需确认)
-LogOut=none,none,注销
-Reboot=none,none,重启
-Reboot Without Confirmation=none,none,重启 (无需确认)
-Shut Down=none,none,关机
+Log Out Without Confirmation=none,,注销 (无需确认)
+LogOut=none,,注销
+Reboot=none,,重启
+Reboot Without Confirmation=none,,重启 (无需确认)
+Shut Down=none,,关机
 _k_friendly_name=会话管理
 
 [kwin]
@@ -239,11 +239,11 @@ view_zoom_out=none,Meta+-,缩小(O)
 
 [mediacontrol]
 _k_friendly_name=媒体控制器
-mediavolumedown=none,none,媒体音量降低
-mediavolumeup=none,none,媒体音量提高
+mediavolumedown=none,,媒体音量降低
+mediavolumeup=none,,媒体音量提高
 nextmedia=Media Next,Media Next,播放下一首媒体
 pausemedia=Media Pause,Media Pause,暂停媒体播放
-playmedia=none,none,播放媒体
+playmedia=none,,播放媒体
 playpausemedia=Media Play,Media Play,播放/暂停媒体播放
 previousmedia=Media Previous,Media Previous,播放上一首媒体
 stopmedia=Media Stop,Media Stop,停止媒体播放
