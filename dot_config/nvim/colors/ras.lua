@@ -38,6 +38,8 @@ Group.new("LineNr", colors.cyan, colors.background, styles.none)
 Group.new("CursorLineNr", colors.bright_magenta, colors.background, styles.none)
 Group.new("Directory", colors.cyan, colors.backgroud, styles.none)
 Group.new("Special", colors.cyan, colors.backgroud, styles.none)
+Color.new("ColorLspReferenceText", "#2A2A2A")
+Group.new("LspReferenceText", nil, colors.ColorLspReferenceText, styles.none)
 
 --tree-sitter
 Group.new("@variable", colors.magenta, nil, styles.none)
