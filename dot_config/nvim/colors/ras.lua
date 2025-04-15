@@ -29,6 +29,10 @@ Color.new("bright_cyan", "#39C9C5")
 Color.new("white", "#E0FEFF")
 Color.new("bright_white", "#F0FDFF")
 
+-- other colors
+Color.new("gray1", "#2A2A2A")
+Color.new("gray2", "#303030")
+
 --basic
 Group.new("Normal", colors.foreground, colors.background)
 Group.new("Visual", colors.bright_white, colors.blue, styles.none)
@@ -38,8 +42,7 @@ Group.new("LineNr", colors.cyan, colors.background, styles.none)
 Group.new("CursorLineNr", colors.bright_magenta, colors.background, styles.none)
 Group.new("Directory", colors.cyan, colors.backgroud, styles.none)
 Group.new("Special", colors.cyan, colors.backgroud, styles.none)
-Color.new("ColorLspReferenceText", "#2A2A2A")
-Group.new("LspReferenceText", nil, colors.ColorLspReferenceText, styles.none)
+Group.new("LspReferenceText", nil, colors.gray1, styles.none)
 
 --tree-sitter
 Group.new("@variable", colors.magenta, nil, styles.none)
@@ -190,5 +193,4 @@ Group.new("MiniIconsOrange", colors.yellow, nil, styles.none)
 Group.new("MiniIconsRed", colors.bright_red, nil, styles.none)
 
 -- Statusline
-Color.new("StatusLineBG", "#303030")
-Group.new("StatusLine", colors.cyan, colors.StatusLineBG, styles.none)
+Group.new("StatusLine", colors.cyan, colors.gray2, styles.none)

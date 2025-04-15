@@ -66,7 +66,7 @@ KrohnkiteFocusRight=Meta+L,none,Krohnkite: Focus Right
 KrohnkiteFocusUp=Meta+K,none,Krohnkite: Focus Up
 KrohnkiteGrowHeight=none,none,Krohnkite: Grow Height
 KrohnkiteIncrease=Meta+I,none,Krohnkite: Increase
-KrohnkiteMonocleLayout=Meta+M,none,Krohnkite: Monocle Layout
+KrohnkiteMonocleLayout=none,none,Krohnkite: Monocle Layout
 KrohnkiteNextLayout=Meta+\\\\,none,Krohnkite: Next Layout
 KrohnkitePreviousLayout=Meta+|,none,Krohnkite: Previous Layout
 KrohnkiteQuarterLayout=none,none,Krohnkite: Quarter Layout
@@ -168,7 +168,7 @@ Window Lower=none,,降低窗口
 Window Maximize=Meta+PgUp,Meta+PgUp,最大化窗口
 Window Maximize Horizontal=none,,水平最大化窗口
 Window Maximize Vertical=none,,垂直最大化窗口
-Window Minimize=Meta+PgDown,Meta+PgDown,最小化窗口
+Window Minimize=Meta+M\tMeta+PgDown,Meta+PgDown,最小化窗口
 Window Move=none,,移动窗口
 Window Move Center=none,,移动窗口到中央
 Window No Border=none,,显示/隐藏窗口标题栏和框架
@@ -305,6 +305,9 @@ _launch=Alt+Space\tSearch\tMeta\tAlt+F2
 
 [services][org.kde.kscreen.desktop]
 ShowOSD=Display
+
+[services][org.kde.spectacle.desktop]
+RecordRegion=none
 
 [services][systemsettings.desktop]
 _launch=Meta+Space\tTools
