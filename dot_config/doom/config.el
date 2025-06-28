@@ -107,3 +107,6 @@
   (add-to-list 'copilot-indentation-alist '(text-mode 2))
   (add-to-list 'copilot-indentation-alist '(closure-mode 2))
   (add-to-list 'copilot-indentation-alist '(emacs-lisp-mode 2)))
+;; bind s with evil-avy-goto-char-timer
+(remove-hook 'doom-first-input-hook #'evil-snipe-mode)
+(map! :n "s" #'evil-avy-goto-char-timer)
