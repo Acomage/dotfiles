@@ -37,6 +37,9 @@ _k_friendly_name=会话管理
 
 [kwin]
 Activate Window Demanding Attention=Meta+Ctrl+A,Meta+Ctrl+A,激活请求注意的窗口
+ClearLastMouseMark=Meta+Shift+F12,Meta+Shift+F12,清除上一条鼠标画线
+ClearMouseMarks=Meta+Shift+F11,Meta+Shift+F11,清除鼠标画线
+Cube=Meta+C,Meta+C,切换立方体
 Cycle Overview=none,none,循环显示桌面概览和网格视图
 Cycle Overview Opposite=none,none,循环显示网格视图和桌面概览
 Decrease Opacity=none,,降低活动窗口不透明度 5%
@@ -45,7 +48,7 @@ Expose=Ctrl+F9,Ctrl+F9,显示/隐藏窗口平铺 (当前桌面)
 ExposeAll=Ctrl+F10\tLaunch (C),Ctrl+F10\tLaunch (C),显示/隐藏窗口平铺 (全部桌面)
 ExposeClass=Ctrl+F7,Ctrl+F7,显示/隐藏窗口平铺 (窗口类)
 ExposeClassCurrentDesktop=none,none,显示/隐藏窗口平铺 (当前桌面的窗口类)
-Grid View=Meta+S,Meta+G,切换网格视图
+Grid View=none,Meta+G,切换网格视图
 Increase Opacity=none,,提高活动窗口不透明度 5%
 Kill Window=Meta+Ctrl+Esc,Meta+Ctrl+Esc,强制终止窗口
 KrohnkiteBTreeLayout=none,none,Krohnkite: BTree Layout
@@ -80,7 +83,7 @@ KrohnkiteStackedLayout=none,none,Krohnkite: Stacked Layout
 KrohnkiteStairLayout=none,none,Krohnkite: Stair Layout
 KrohnkiteTileLayout=none,none,Krohnkite: Tile Layout
 KrohnkiteToggleFloat=Meta+G,none,Krohnkite: Toggle Float
-KrohnkiteTreeColumnLayout=none,none,Krohnkite: Tree Column Layout
+KrohnkiteTreeColumnLayout=none,none,Krohnkite: Three Column Layout
 KrohnkitegrowWidth=none,none,Krohnkite: Grow Width
 KrohnkitetoggleDock=none,none,Krohnkite: Toggle Dock
 Move Tablet to Next Output=none,none,移动数位板到下一个输出设备
@@ -141,6 +144,7 @@ Toggle=Meta+Ctrl+Alt+P,Meta+Ctrl+Alt+P,开始/停止高亮显示
 Toggle Night Color=none,none,暂停/继续夜间色温
 Toggle Window Raise/Lower=none,,提升/降低窗口
 ToggleCurrentThumbnail=Meta+Ctrl+T,Meta+Ctrl+T,显示/隐藏当前窗口缩略图
+ToggleMouseClick=Meta+*,Meta+*,打开/关闭鼠标点击动效
 Walk Through Windows=Alt+Tab,Meta+Tab\tAlt+Tab,遍历窗口
 Walk Through Windows (Reverse)=Alt+Shift+Tab,Meta+Shift+Tab\tAlt+Shift+Tab,遍历窗口 (反向)
 Walk Through Windows Alternative=none,none,遍历窗口交替
@@ -296,8 +300,11 @@ New=Meta+A
 [services][firefox.desktop]
 _launch=Meta+B
 
-[services][kitty.desktop]
+[services][footclient.desktop]
 _launch=Meta+Return
+
+[services][kitty.desktop]
+_launch=Meta+S
 
 [services][org.kde.krunner.desktop]
 _launch=Alt+Space\tSearch\tMeta\tAlt+F2

@@ -43,6 +43,3 @@ test -r '/home/acomage/.opam/opam-init/init.fish' && source '/home/acomage/.opam
 
 # set PATH of Doom emacs
 alias doom="/home/acomage/.config/emacs/bin/doom"
-
-# set the PATH for nim
-set -ga fish_user_paths /home/acomage/.nimble/bin
