@@ -43,3 +43,11 @@ test -r '/home/acomage/.opam/opam-init/init.fish' && source '/home/acomage/.opam
 
 # set PATH of Doom emacs
 alias doom="/home/acomage/.config/emacs/bin/doom"
+
+# since each time I use lake and lean, they will check update, we use a alias
+# alias lean="echo 'you are using version 4.21.0, please check update when you want' && ~/.elan/toolchains/leanprover--lean4---v4.21.0/bin/lean"
+#
+# alias lake="echo 'you are using version 4.21.0, please check update when you want' && ~/.elan/toolchains/leanprover--lean4---v4.21.0/bin/lake"
+
+alias lean="printf '\e[31mYou are using version 4.21.0, please check update when you want\e[0m\n'; ~/.elan/toolchains/leanprover--lean4---v4.21.0/bin/lean"
+alias lake="printf '\e[31mYou are using version 4.21.0, please check update when you want\e[0m\n'; ~/.elan/toolchains/leanprover--lean4---v4.21.0/bin/lake"
