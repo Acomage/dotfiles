@@ -1,2 +1,3 @@
 set selection-clipboard clipboard
 set font "JetbrainsMono Nerd Font"
+include theme
