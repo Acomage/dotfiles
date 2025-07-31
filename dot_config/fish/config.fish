@@ -51,3 +51,6 @@ alias doom="/home/acomage/.config/emacs/bin/doom"
 
 alias lean="printf '\e[31mYou are using version 4.21.0, please check update when you want\e[0m\n'; ~/.elan/toolchains/leanprover--lean4---v4.21.0/bin/lean"
 alias lake="printf '\e[31mYou are using version 4.21.0, please check update when you want\e[0m\n'; ~/.elan/toolchains/leanprover--lean4---v4.21.0/bin/lake"
+
+# use wayland for electron
+export ELECTRON_OZONE_PLATFORM_HINT=auto
